@@ -43,7 +43,7 @@ class Displaylist extends React.Component
          {
              if(document.getElementById(`check${i}`).checked===true)
              {
-                 axios.delete("http://localhost:3002/",{
+                 axios.delete("http://ec2-18-188-23-132.us-east-2.compute.amazonaws.com:3002/",{
                      data:{blogzz:this.state.app[i].blog}
                  })
                  .then((response)=>

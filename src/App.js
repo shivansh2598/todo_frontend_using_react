@@ -22,7 +22,7 @@ class App extends Component {
 
   fetchdata()
   {
-      axios.get("http://localhost:3002/")
+      axios.get("http://ec2-18-188-23-132.us-east-2.compute.amazonaws.com:3002/")
       .then((response)=>{
           const val=response.data;
           this.setState(

@@ -27,7 +27,7 @@ class Inputbox extends React.Component
             console.log(event);
             return;
         }
-        axios.post("http://localhost:3002/",{
+        axios.post("http://ec2-18-188-23-132.us-east-2.compute.amazonaws.com:3002/",{
             blog:input,
             id:id
         })
